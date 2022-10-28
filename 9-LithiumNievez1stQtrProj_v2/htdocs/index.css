@@ -46,6 +46,7 @@ p {
 }
 
 #title h1 {
+	font-family:"georgia", serif;
     float: left;
     margin-top: 40px;
 	color: black;
@@ -66,6 +67,7 @@ p {
     border-right-style: solid ;
     border-bottom-style: hidden;
 	padding-right: 30px; 
+	font-family:"georgia", serif;
 }
 nav ul li a:hover{
 	padding: 5px;
@@ -74,6 +76,7 @@ nav ul li a:hover{
 }
 
 #middle h2 {
+	font-family:"georgia", serif;
     font-weight: 300;
     color: black;
     font-size: 55px;
@@ -93,6 +96,7 @@ nav ul li a:hover{
 	text-align: center;
 }
 #features h4 {
+	font-family:"georgia", serif;
 	font-size: 30px;
 	color: black;
 	text-align: center;
