@@ -163,7 +163,7 @@ body {
 	 transition: opacity 0.5s;
 }
 #seller:hover {
-	background-image:url("../images/seller-bg.gif");
+	background-image:url("../images/sell-bg.gif");
 	 background-size:100% ;
 }
 #donate{
