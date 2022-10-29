@@ -22,6 +22,7 @@ body {
 }
 
 #title h1 {
+	font-family:"georgia", serif;
     float: left;
     margin-top: 30px;
 	color: black;
@@ -42,6 +43,7 @@ body {
     border-right-style: solid ;
     border-bottom-style: hidden;
 	padding-right: 30px; 
+	font-family:"georgia", serif;
 }
 #primary-content {
 		background-image:url("../images/bg.png");
@@ -61,6 +63,7 @@ body {
     font-weight: 300;
     color: black;
     font-size: 55px;
+	font-family:"georgia", serif;
     text-align: center;
 	margin: 50px 0 10px 20px;
 	display: block;
@@ -68,14 +71,13 @@ body {
     padding: 10px 0 0 0;
 }
 #primary-content p{ 
-
+	font-family:"georgia", serif;
 	font-size: 20px;
 	color: black;
 	text-align: justify;
 	margin: 50px 30px 100px 30px;
 	border-bottom: 1px solid gray;
-	padding: 0 0 20px 0;
-	
+	padding: 0 0 20px 0;	
 }
 #shopper{
 	background-color: #f5f0bb;
@@ -122,6 +124,7 @@ body {
     padding: 10px 150px 0 0;
 }
 #shopper p{
+	font-family:"georgia", serif;
 	font-size: 20px;
 	color: black;
 	text-align: right;
@@ -131,22 +134,24 @@ body {
 #seller{
 	width: 100%;
 	height: 820px;
-    float: left;
-    margin: 0 5px 20px 5px;
+   	float: left;
+ 	margin: 0 5px 20px 5px;
 	border: 2px hidden black;
 	padding: 20px 20px 20px 20px;
 	background-color: #90c8ac;
 }
 #seller h3{
 	color: black;
-    font-size: 55px;
-    text-align: center;
+    	font-size: 55px;
+	font-family:"georgia", serif;
+    	text-align: center;
 	margin: 10px 0 10px 0;
 	display: block;
-    padding: 10px 150px 0 0;
+   	 padding: 10px 150px 0 0;
 }
 #seller p{
 	font-size: 20px;
+	font-family:"georgia", serif;
 	color: black;
 	text-align: center;
 	text-align: justify;
@@ -170,8 +175,8 @@ body {
 	width: 80%;
 	height: 500px;
 	background-color: #f5f0bb;
-    float: left;
-    margin: 0 5px 20px 100px;
+    	float: left;
+    	margin: 0 5px 20px 100px;
 	border: 5px inset white;
 	padding-top: 20px 20px 20px 20px;
 	background-image:url("../images/donation.gif");
@@ -185,13 +190,15 @@ body {
 }
 #donate h3{
 	color: black;
-    font-size: 55px;
-    text-align: left;
+	font-family:"georgia", serif;
+    	font-size: 55px;
+   	text-align: left;
 	margin: 10px 10px 10px 100px;
 	display: block;
-    padding: 10px 150px 0 0;
+    	padding: 10px 150px 0 0;
 }
 #donate p{
+	font-family:"georgia", serif;
 	font-size: 20px;
 	color: black;
 	text-align: left;
@@ -202,20 +209,21 @@ body {
 	clear: both;
 }
 #extra nav {
-   position: left;
+  	position: left;
 }
 #extra nav ul li {
-    display: inline-block;
-    margin: 25px 10px 25px 10px;
+    	display: inline-block;
+    	margin: 25px 10px 25px 10px;
 }
 #extra  nav ul li a {
 	color: #444;
 	border: 1px black;
-    border-top-style: hidden;
-    border-left-style: hidden;
-    border-right-style: solid ;
-    border-bottom-style: hidden;
-	padding: 0 120px 0 120px; 
+    	border-top-style: hidden;
+    	border-left-style: hidden;
+    	border-right-style: solid ;
+   	border-bottom-style: hidden;
+	padding: 0 120px 0 120px;
+	font-family:"georgia", serif;
 }
 nav ul li a:hover{	
 	font-size: 120%; 
