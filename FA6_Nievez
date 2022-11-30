@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Ryhannah Gwynne B. Nievez">
+	<meta name="description" content="FA6_Nievez.html">
+	<meta name="keywords" content"HTML">
+	<title>Ryhannah Gwynne B. Nievez</title>
+	
+		<style>
+		
+			a:link {
+			background-color: yellow;
+			text-decoration: none;
+			border:solid black 1px;
+			padding: 10px;
+			font-size: 30px;
+			}
+			a:visited {
+			background-color: blue;
+			color: white;
+			}
+			a:hover {
+			background-color: pink;
+			color: gray;
+			}
+			a:active {
+			background-color: lightgreen;
+			color: yellow;
+			}
+			.Ry div{
+			border: solid black 1px;
+			width: 150px;
+			height: 150px;
+			margin-top 30px;
+			}
+			div:target#div1{
+			display: block;
+			border: solid black 1px;
+			background-color: maroon;
+			}
+			div:target#div2{
+			display: block;
+			border: dotted green 10px;
+			background-color: cyan;
+			color: yellow;
+			}
+			body {
+			padding: 20px;
+			}
+	</style>
+</head>
+<body>
+	<div class="Ry">
+		<a class="link1" href="#div1" target="_blank">
+			First link
+		</a>
+		<a class="link2" href="#div2" target="_blank">
+			Second link
+		</a>
+		<div id="div1">
+			<h2>Div 1 here</h2>
+		</div>
+		<div id="div2">
+			<h2>Div 2 here</h2>
+		</div>
+	</body>
+</html>
+		
