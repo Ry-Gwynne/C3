@@ -6,43 +6,71 @@
 	<meta name="keywords" content"HTML">
 	<title>Ryhannah Gwynne B. Nievez</title>
 	
-		<style>
+	<style>
 		
-			a:link {
+			a.one:link {
 			background-color: yellow;
 			text-decoration: none;
-			border:solid black 1px;
 			padding: 10px;
 			font-size: 30px;
+			margin: 10px;
+			border: outset darkred 1px;
 			}
-			a:visited {
+			a.one:visited {
+			background-color: green;
+			color: white;
+			border: outset darkred 1px;
+			}
+			a.one:hover {
+			background-color: pink;
+			color: violet;
+			border: outset darkred 1px;
+			}
+			a.one:active {
+			background-color: cyan;
+			color: yellow;
+			border: outset darkred 1px;
+			}
+			a.two:link {
+			background-color: orange;
+			text-decoration: none;
+			padding: 10px;
+			font-size: 30px;
+			border: outset darkred 1px;
+			}
+			a.two:visited {
 			background-color: blue;
 			color: white;
+			border: outset darkred 1px;
 			}
-			a:hover {
-			background-color: pink;
-			color: gray;
+			a.two:hover {
+			background-color: hotpink;
+			color: lightgreen;
+			border: outset darkred 1px;
 			}
-			a:active {
-			background-color: lightgreen;
-			color: yellow;
+			a.two:active {
+			background-color: red;
+			color: lightpink;
+			border: outset darkred 1px;
 			}
 			.Ry div{
 			border: solid black 1px;
 			width: 150px;
 			height: 150px;
-			margin-top 30px;
+			margin-top: 30px;
+			margin-left: 10px;
 			}
 			div:target#div1{
 			display: block;
 			border: solid black 1px;
-			background-color: maroon;
+			background-color: darkblue;
+			color: white;
 			}
 			div:target#div2{
 			display: block;
 			border: dotted green 10px;
-			background-color: cyan;
-			color: yellow;
+			background-color: lightblue;
+			color: white;
 			}
 			body {
 			padding: 20px;
@@ -51,10 +79,10 @@
 </head>
 <body>
 	<div class="Ry">
-		<a class="link1" href="#div1" target="_blank">
+		<a class="one" href="#div1" target="_blank">
 			First link
 		</a>
-		<a class="link2" href="#div2" target="_blank">
+		<a class="two" href="#div2" target="_blank">
 			Second link
 		</a>
 		<div id="div1">
@@ -65,4 +93,3 @@
 		</div>
 	</body>
 </html>
-		
