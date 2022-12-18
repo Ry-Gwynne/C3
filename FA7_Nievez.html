@@ -13,6 +13,10 @@
 				font-size: 70px;
 				margin: 0px;
 				transform: skew(-30deg);
+				-webkit-transform: skew(-30deg);
+				-ms-transform: skew(-30deg);
+				-mos-transform: skew(-30deg);
+				-o-transform: skew(-30deg);
 		}
 		
 		h2{
@@ -26,11 +30,19 @@
 				color: red;
 				background: yellow;
 		}
-		.p3 {
+		p:nth-of-type(3) {
 				transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				-mos-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
 				color: red;
 				float: left;
 				transform: scale(1,-1);
+				-webkit-transform: scale(1,-1);
+				-ms-transform: scale(1,-1);
+				-mos-transform: scale(1,-1);
+				-o-transform: scale(1,-1);
 		}
 		</style>
 </head>
@@ -41,7 +53,7 @@
 	<div>
 		<p>This is paragraph 1.</p>
 		<p>This is paragraph 2.</p>
-		<div class="p3">This is paragraph 3.</div><br>
+		<p>This is paragraph 3.</p>
 		<p>This is paragraph 4.</p>
 		<p>This is paragraph 5.</p>
 	</div>
