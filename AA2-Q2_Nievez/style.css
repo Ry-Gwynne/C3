@@ -19,7 +19,7 @@ article {
 		margin-right:10px;
 		background-color:#EEE;
 }
-h2 {
+article h2 {
 		position:absolute;
 		right:0px;
 		top:0px;
@@ -27,7 +27,7 @@ h2 {
 		text-align:center;
 		border:1px solid black;
 }
-p {
+article p {
 		margin:35px 5px 5px 5px;
 }
 #beef {
