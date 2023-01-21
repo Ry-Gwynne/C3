@@ -1,0 +1,150 @@
+* {
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+.logo {
+	float: left;
+	position: relative;
+	margin: 0 10px 0 10px;
+}
+body {
+	background-color: #fdfae2;
+	background-image:url("../images/bg.png");
+	background-size:100%;
+}
+
+
+#title {
+	background-color:#f5f0bb;
+	position:relative;
+	top:0;
+	width:100%;
+	height: 100px;
+}
+
+#title h1 {
+    float: left;
+    margin-top: 30px;
+	color: black;
+}
+
+#title nav {
+    float: right;
+}
+#title nav ul li {
+    display: inline-block;
+    margin: 40px 30px 0 0;
+}
+#title nav ul li a {
+	color: #444;
+	border: 1px black;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: solid ;
+    border-bottom-style: hidden;
+	padding-right: 30px; 
+	width:15%;	
+}
+#help {
+		background-image:url("../images/bg.png");
+		background-size:100%;
+}
+#help:hover {
+	opacity:0.8;
+	 background-image:url("../images/homebg.gif");
+	 transition: background-image 0.5s;
+	 
+}
+#help h3:hover {
+	scale:120%;
+	 transition: scale 0.5s;
+}
+#help h3 {
+    font-weight: 300;
+    color: black;
+    font-size: 55px;
+    text-align: center;
+	margin: 50px 0 10px 20px;
+	display: block;
+	border-top: 1px solid gray;
+    padding: 10px 0 0 0;
+}
+#help p{ 
+
+	font-size: 20px;
+	color: black;
+	text-align: justify;
+	margin: 50px 30px 100px 30px;
+	border-bottom: 1px solid gray;
+	padding: 0 0 20px 0;
+	
+}
+#features ul {
+    margin: 180px 0 20px 0;
+	text-align: center;
+}
+#features h4 {
+	font-family:"georgia", serif;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#features p {
+	font-family:"georgia", serif;
+	font-size: 17px;
+	color: black;
+	margin-top: 10px;
+	text-align: justify;
+	text-align: center;
+}
+#features ul li {
+	list-style: none;
+    width: 23%;
+	height: 25%;
+    float: left;
+    margin: 0 5px 20px 5px;
+	border: 2px solid white;
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+	background-image: url("../images/bg-ft.png");
+	transform:skew(-20deg);
+
+}
+.help-pic {
+	position: center;
+	transition: 0.5s;
+}
+.help-pic:hover {
+	 scale: 120%;
+}
+#extra {
+	clear: both;
+}
+#extra nav {
+   position: left;
+}
+#extra nav ul li {
+    display: inline-block;
+    margin: 25px 10px 25px 10px;
+}
+#extra  nav ul li a {
+	color: #444;
+	border: 1px black;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: solid ;
+    border-bottom-style: hidden;
+	padding: 0 30px 0 30px;
+	width:15%; 
+}
+
+footer {
+	clear:both;
+}
+footer p {
+	text-align: center;
+}

@@ -1,0 +1,122 @@
+* {
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+.logo {
+	float: left;
+	position: relative;
+	margin: 0 10px 0 10px;
+}
+body {
+	background-color: #fdfae2;
+	background-image:url("../images/bg.png");
+	background-size:100%;
+}
+
+
+#title {
+	background-color:#f5f0bb;
+	position:relative;
+	top:0;
+	width:100%;
+	height: 100px;
+}
+
+#title h1 {
+    float: left;
+    margin-top: 30px;
+	color: black;
+}
+
+#title nav {
+    float: right;
+}
+#title nav ul li {
+    display: inline-block;
+    margin: 40px 30px 0 0;
+}
+#title nav ul li a {
+	color: #444;
+	border: 1px black;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: solid ;
+    border-bottom-style: hidden;
+	padding-right: 30px;
+	width:15%;	
+}
+
+#About{
+		background-image:url("../images/bg.png");
+		background-size:100%;
+}
+#About:hover {
+	opacity:0.8;
+	 background-image:url("../images/homebg.gif");
+	 transition: background-image 0.5s;
+	 
+}
+#About h3:hover {
+	scale:120%;
+	 transition: scale 0.5s;
+}
+#About h3 {
+    font-weight: 300;
+    color: black;
+    font-size: 55px;
+    text-align: center;
+	margin: 50px 0 10px 20px;
+	display: block;
+	border-top: 1px solid gray;
+    padding: 10px 0 0 0;
+}
+#About p{ 
+
+	font-size: 20px;
+	color: black;
+	text-align: justify;
+	margin: 50px 30px 100px 30px;
+	border-bottom: 1px solid gray;
+	padding: 0 0 20px 0;
+	
+}
+#wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+	background-color:#f5f0bb;
+      margin: 10px auto;
+      padding: 5px 30px;
+      width: 100%;
+      box-shadow: 0 0 5px black;
+    }
+#extra {
+	clear: both;
+}
+#extra nav {
+   position: left;
+}
+#extra nav ul li {
+    display: inline-block;
+    margin: 25px 10px 25px 10px;
+}
+#extra  nav ul li a {
+	color: #444;
+	border: 1px black;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: solid ;
+    border-bottom-style: hidden;
+	padding: 0 30px 0 30px;
+	width:15%;		
+}
+footer {
+	clear:both;
+}
+footer p {
+	text-align: center;
+}

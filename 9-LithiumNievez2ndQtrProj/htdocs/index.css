@@ -1,0 +1,141 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	background-image: url("../images/bg.png");
+	background-color: #fdfae2;
+	background-size: 100%;
+	margin:0;
+	padding-top:77.6px;
+}
+
+.logo {
+	max-width: 20%;
+	float: left;
+	position: center;
+    margin: 10px 10px 0 10px;
+}
+span {
+	font-family:"georgia", serif;
+	font-style: italic;
+	font-size: 25px;
+	color: black;
+}
+
+p {
+	font-family:"georgia", serif;
+	font-style: italic;
+	font-size: 15px;
+	color: black;
+}
+
+header {
+	background-color:#f5f0bb;
+	padding: 10px;
+	position:fixed;
+	top:0;
+	width:100%;
+}
+header u {
+	color: #90c8ac;
+}
+#title {
+	padding: 0 10px;
+    width: 100%;
+	
+}
+
+#title h1 {
+	font-family:"georgia", serif;
+    float: left;
+    margin-top: 40px;
+	color: black;
+	font-size:30px;
+}
+
+#title nav {
+    float: right;	
+}
+#title nav ul li {
+    display: inline-block;
+    margin: 35px 30px 0 0;
+}
+#title nav ul li a {
+	color: #444;
+	border: 1px black;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: solid ;
+    border-bottom-style: hidden;
+	padding-right: 30px; 
+	font-family:"georgia", serif;
+	width:15%;	
+}
+nav ul li a:hover{
+	padding: 5px;
+	font-size: 120%; 
+	transition: font-size 0.5s;
+}
+
+#middle h2 {
+	font-family:"georgia", serif;
+    font-weight: 300;
+    color: black;
+    font-size: 55px;
+    text-align: center;
+	margin: 200px 0 20px 10px;
+}
+#middle p{ 
+	font-size: 20px;
+	color: #444;
+	text-align: center;
+	margin-bottom: 250px;
+	font-family:"georgia", serif;
+	font-style: italic;
+}
+#features ul {
+    margin: 180px 0 20px 0;
+	text-align: center;
+}
+#features h4 {
+	font-family:"georgia", serif;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#features p {
+	font-family:"georgia", serif;
+	font-size: 17px;
+	color: black;
+	margin-top: 10px;
+	text-align: justify;
+	text-align: center;
+}
+#features ul li {
+	list-style: none;
+    width: 30%;
+	height: 30%;
+    float: left;
+    margin: 0 5px 20px 5px;
+	border: 2px solid white;
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+	background-image: url("../images/bg-ft.png");
+
+}
+.feature-pic {
+	position: center;
+	transition: 0.5s;
+}
+.feature-pic:hover {
+	 scale: 120%;
+}
+	
+footer {
+	clear:both;
+}
+footer p {
+	text-align: center;
+}

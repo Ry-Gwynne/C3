@@ -1,0 +1,236 @@
+* {
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+.logo {
+	float: left;
+	position: relative;
+	margin: 0 10px 0 10px;
+}
+body {
+	background-color: #fdfae2;
+}
+#title {
+	background-color:#f5f0bb;
+	position:relative;
+	top:0;
+	width:100%;
+	height: 100px;
+	transform: skewX(20deg);
+}
+
+#title h1 {
+    float: left;
+    margin-top: 30px;
+	color: black;
+}
+
+#title nav {
+    float: right;
+}
+#title nav ul li {
+    display: inline-block;
+    margin: 40px 30px 0 0;
+}
+#title nav ul li a {
+	color: #444;
+	border: 1px black;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: solid ;
+    border-bottom-style: hidden;
+	padding-right: 30px;
+width:15%;		
+}
+#primary-content {
+		background-image:url("../images/bg.png");
+		background-size:100%;
+}
+
+#primary-content:hover {
+	opacity:0.8;
+	 background-image:url("../images/homebg.gif");
+	 transition: background-image 0.5s;
+}
+#primary-content h3:hover {
+	scale:120%;
+	 transition: scale 0.5s;
+}
+#primary-content h3 {
+    font-weight: 300;
+    color: black;
+    font-size: 55px;
+    text-align: center;
+	margin: 50px 0 10px 20px;
+	display: block;
+	border-top: 1px solid gray;
+    padding: 10px 0 0 0;
+}
+#primary-content p{ 
+
+	font-size: 20px;
+	color: black;
+	text-align: justify;
+	margin: 50px 30px 100px 30px;
+	border-bottom: 1px solid gray;
+	padding: 0 0 20px 0;
+	
+}
+#shopper{
+	background-color: #f5f0bb;
+	width: 80%;
+	height: 400px;
+    float: left;
+    margin: 0 5px 20px 100px;
+	border: 5px outset white;
+	padding: 20px 20px 20px 20px;
+	background-image:url("../images/shop.png");
+	background-repeat:no-repeat;
+	background-size: 600px 400px;
+}
+#shopper:hover {
+	opacity: 0.5;
+	transition: opacity 2s;
+}
+#shopper:hover .text{
+	max-width:50%;
+	opacity: 1;
+	transition: opacity 0.5s;
+	color: black;
+	background-color: #90c8ac;
+	border: 2px dotted white;
+	padding: 40px 20px 0 20px; 
+}
+.text  {
+	font-weight: 400;
+	font-size: 75px;
+	opacity: 0;
+	position: absolute;
+	width:60%;
+	height: 200px;
+	top: 60%;
+	margin: 300px 0 800px 150px;
+	text-align: center;
+}
+
+#shopper h3{
+	color: black;
+    font-size: 55px;
+    text-align: right;
+	margin: 10px 0 20px 0;
+	display: block;
+    padding: 10px 150px 0 0;
+}
+#shopper p{
+	font-size: 20px;
+	color: black;
+	text-align: right;
+	text-align: justify;
+	padding: 0px 100px 0 600px;
+}
+#seller{
+	width: 100%;
+	height: 820px;
+    float: left;
+    margin: 0 5px 20px 5px;
+	border: 2px hidden black;
+	padding: 20px 20px 20px 20px;
+	background-color: #90c8ac;
+}
+#seller h3{
+	color: black;
+    font-size: 55px;
+    text-align: center;
+	margin: 10px 0 10px 0;
+	display: block;
+    padding: 10px 150px 0 0;
+}
+#seller p{
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	text-align: justify;
+	padding: 0px 200px 0 200px;
+}
+.sell {
+	position: center;
+	margin: 0 10px 0 10px;
+	transition: 1s;
+	width:100%;
+
+}
+.sell:hover {
+	 scale: 120%;
+	 opacity: 0.5;
+	 transition: opacity 0.5s;
+}
+#seller:hover {
+	background-image:url("../images/seller-bg.gif");
+	 background-size:100%;
+}
+#donate{
+	width: 80%;
+	height: 500px;
+	background-color: #f5f0bb;
+    float: left;
+    margin: 0 5px 20px 100px;
+	border: 5px inset white;
+	padding-top: 20px 20px 20px 20px;
+	background-image:url("../images/donation.gif");
+	background-repeat:no-repeat;
+	background-size: 600px 500px;
+	background-position:right;
+}
+#donate:hover {
+	scale: 120%;
+	transition: scale 1s;
+}
+#donate h3{
+	color: black;
+    font-size: 55px;
+    text-align: left;
+	margin: 10px 10px 10px 100px;
+	display: block;
+    padding: 10px 150px 0 0;
+}
+#donate p{
+	font-size: 20px;
+	color: black;
+	text-align: left;
+	text-align: justify;
+	padding: 0px 600px 0 50px;
+}
+#extra {
+	clear: both;
+}
+#extra nav {
+   position: left;
+}
+#extra nav ul li {
+    display: inline-block;
+    margin: 25px 10px 25px 10px;
+}
+#extra  nav ul li a {
+	color: #444;
+	border: 1px black;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: solid ;
+    border-bottom-style: hidden;
+	padding: 0 30px 0 30px;
+	width:15%; 
+}
+nav ul li a:hover{	
+	font-size: 120%; 
+	transition: font-size 0.5s;
+}
+footer {
+	clear:both;
+}
+footer p {
+	padding:10px;
+	text-align: center;
+}
