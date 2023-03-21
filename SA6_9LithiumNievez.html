@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>One Time Password </title>
+		<meta name="author" content="Ryhannah Gwynne B. Nievez">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        	body {background: lightblue; 
+            	text-align: center;
+            	font-family: arial;
+                color: navy;
+            }
+            button {padding: 10px; background:violet }
+            a {font-size: 0.5em; color: maroon}
+        </style>
+	</head>
+	<body onload="generateOTP()">
+		<h1> Final Verification Step </h1>
+		<h2> Current OTP: <span id="otp"> _ _ _ _ _ _ </span> <a href="#" onclick="newOTP()"> New OTP </a></h2>
+		<button onclick="enterOTP()"> Enter the OTP as shown above </button>
+  
+        <script>
+        	/* generates password */
+        	function generateOTP() {
+        		var otp = Math.floor(100000 + Math.random() * 900000);
+        		/* displays the randomly generated OTP*/
+        		document.getElementById("otp").innerHTML = otp;
+        	}
+
+        	/* function generates new OTP*/
+        	function newOTP() {
+        		generateOTP();
+        	}
+
+        	/* prompts user for the OTP displayed and checks the OTP*/
+        	function enterOTP() {
+        		var enteredOTP = prompt("Please enter the OTP shown on the screen:");
+        		if (enteredOTP != document.getElementById("otp").innerHTML) {
+        			/* display error message*/
+        			alert("Incorrect OTP entered. Please try again.");
+        			/* generates new OTP*/
+        			generateOTP();
+        		} else {
+        			/* opens new window*/
+        			window.open("https://www.google.com/");
+        		}
+        	}
+        </script>
+	</body>
+</html>

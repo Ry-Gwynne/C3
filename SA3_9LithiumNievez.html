@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Choose Background Color</title>
+		<meta name="author" content="Ryhannah Gwynne B. Nievez">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        	* { box-sizing: border-box; 
+            	font-family: arial; 
+                color: white;
+            }           
+            body {background:navy}
+            ul {
+            	list-style-type: none;
+                width: 100px;
+                padding: 0;
+                border: 1px solid black;
+                background: gray;
+            }
+            li {width: 100%;
+            	border-bottom: 1px solid black;
+                padding: 5px;
+            }
+            li:nth-child(3) {border:none}
+            a {	text-decoration:none;
+            	display:block;
+                width: 100%;
+            }
+            li:nth-child(1):hover {background:purple}
+            li:nth-child(2):hover {background:navy}
+            li:nth-child(3):hover {background:maroon}
+            
+        </style>
+
+	</head>
+	<body>
+		<h2> Choose Background Color </h2>
+        <ul>
+        	<li><a href="#" onclick="changeBackgroundColor('Purple')">Purple</a></li>
+            <li><a href="#" onclick="changeBackgroundColor('Navy')"> Navy </a></li>
+            <li><a href="#" onclick="changeBackgroundColor('Maroon')"> Maroon </a></li>
+        </ul>
+		
+
+        <script>
+            function changeBackgroundColor(color){ /*Defines a function that called changeBackgroundColor()*/
+                var background = document.body; /*This assigns a variable called background to the body of the webpage*/
+                background.style.backgroundColor = color; /*This takes the body and changes its color based on the user's choice*/
+            }
+		</script>
+	</body>
+</html>
