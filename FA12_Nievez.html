@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multiplication tablw</title>
+		<meta name="author" content="Ryhannah Gwynne B. Nievez">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	table , th, td {
+              border: 1px solid black;
+              border-style:double;
+              padding: 1px;
+              }
+	</style>
+</head>
+
+<body>
+	<p>[enter a number between 2 and 10]</p>
+	<p><input id="rows"/>by<input id="col"/></p>
+	<button onclick="compute()">Click here when ready!</button></br>
+	</br><div id="result"></div>
+<script>
+	function compute() {
+	var rows;
+	var col;
+	var i = 1;
+	var j = 1;
+	var table;
+    table='<table id="table">';	
+	rows = Number(document.getElementById("rows").value);
+	col = Number(document.getElementById("col").value);
+	
+		if(( 2<=rows && rows <= 10) && (2<=col && col <= 10)) {
+			for(i=1;i<=rows;i++){
+					 table = table +"<tr>";	 
+					  while(j<=col){
+						  table = table + "<td>"+i*j+"</td>";
+						  j++;
+					   }
+					   table=table + "</tr>";
+					   j=1;
+					  }
+				table+='</table>';
+				document.getElementById("result").innerHTML = table;
+				}
+		else  {
+		alert("Please enter a number between 2 and 10, and try again.");
+		}
+}
+</script>
+</body>
+</html>
+
+	
+
