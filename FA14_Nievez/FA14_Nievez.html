@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<head>	
+		<meta name="author" content="Ryhannah Gwynne B. Nievez">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Form</title>	
+	<style>
+	* {
+			box-sizing:border-box;
+		}
+
+		body {
+			background-image: url("jr.jpg");
+			background-size: 100%;
+			margin:0;
+		}
+	#form {
+			background-color:#D6E8DB;
+			background-size:100%;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			margin-right: 200px;
+			margin-left: 200px;
+			padding-bottom: 30px;
+			padding-left: 50px;
+			opacity: 0.9;
+
+	}
+	#form h1 {
+				font-family: 'Brush Script MT', cursive;
+				font-size: 50px;
+				color: #8294C4;
+		
+				margin: 0;
+	}
+	#form h2 {
+				font-family: 'Brush Script MT', cursive;
+				font-size: 30px;
+				color:#ACB1D6;
+				margin: 0;
+	}
+
+		</style>
+	</head>
+	<body> 
+	<section>
+	<article id="form">
+	<h1>Start your journey!</h1>
+	<h2>Sign up here</h2>
+	<form onsubmit = "return demo ()"> 
+	<label for="fname">Full name: </label> <br>  
+	<input type="text" id="fname" onblur="redColor('fname')" onfocus="greenColor('fname')" placeholder="ex: Santiago, Miguel C."> 
+	<br> <br> 
+	<label for="userName">Username: </label> <br>
+	<input type="text" id="user" onblur="redColor('user')" onfocus="greenColor('user')" placeholder="ex: @username"> 
+	<br> <br> 
+	<label for="Gender">Gender: </label> <br>
+	<select id="gender" name="gender" onblur="redColor('gender')" onfocus="greenColor('gender')"> 
+	<option>Male</option> 
+	<option>Female</option> 
+	<option> Prefer not to mention</option> 
+	</select> 
+	<br> <br> 
+	<label for="pass">Password: </label> <br>
+	<input type="password" id="pass" name="pass" onblur="redColor('pass')" onfocus="greenColor('pass')">
+	<br><br> 
+	<label for="email">Email Address: </label> <br>
+	<input type="email" id="email" onblur="redColor('email')" onfocus="greenColor('email')" >
+	<br> <br> 
+	<label for="address">Address: </label> <br>
+	<input type="text" id="add" size="35" onblur="redColor('add')" onfocus="greenColor('add')" placeholder="ex: Brgy.Paraiso, Koronadal City 9506">
+	<br> <br> 
+	<label for="int"> Enter your interests: </label><br> 
+	<textarea id="int" rows="5" cols="50" onblur="redColor('int')" onfocus="greenColor('int')" placeholder="ex: I love to sleep"></textarea> 
+	<br><br><br> 
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset" onclick="reset()">
+	<br>
+	<p>
+	<div id="inputs" style="display: none;">
+	<Fieldset> 
+	<legend>Here are your inputs:</legend> 
+	Name: <span id = "n"></span>
+	<br>
+	Username: <span id = "u"></span>
+	<br>
+	Gender: <span id = "g"></span>
+	<br>
+	Password: <span id = "p"></span>
+	<br>
+	Email Address: <span id = "e"></span>
+	<br>
+	Address: <span id = "a"></span>
+	<br>
+	Short Description: <span id = "s"></span>
+	<br>
+	</div>
+	</p>
+	</article>
+		</section>
+	</body> 
+	<script> 
+	
+	
+	function redColor(y){ 
+	var input = document.getElementById(y).value;
+	if (input === "") {
+	document.getElementById(y).style.borderColor = "red"; 
+	}
+	}
+	
+	function greenColor(y) { 
+	var input = document.getElementById(y).value;
+	document.getElementById(y).style.borderColor = "green";
+	}
+	
+	function reset() { 
+	document.getElementById("fname").style.borderColor = "";
+	document.getElementById("user").style.borderColor = "";
+	document.getElementById("gender").style.borderColor = "";
+	document.getElementById("pass").style.borderColor = "";
+	document.getElementById("email").style.borderColor = "";
+	document.getElementById("add").style.borderColor = "";
+	document.getElementById("int").style.borderColor = "";
+	}
+	
+	function demo () { 
+	var a = document.getElementById("fname").value; 
+	document.getElementById("n").innerHTML = a; 
+	document.getElementById('inputs').style.display = "block";
+	var b = document.getElementById("user").value; 
+	document.getElementById("u").innerHTML = b; 
+	var c = document.getElementById("gender").value; 
+	document.getElementById("g").innerHTML = c; 
+	var d = document.getElementById("pass").value; 
+	document.getElementById("p").innerHTML = d; 
+	var e = document.getElementById("email").value; 
+	document.getElementById("e").innerHTML = e;
+	var f = document.getElementById("add").value; 
+	document.getElementById("a").innerHTML = f; 
+	var g = document.getElementById("int").value; 
+	document.getElementById("s").innerHTML = g; 
+	return false; 
+}
+	
+	</script> 
+</html>
