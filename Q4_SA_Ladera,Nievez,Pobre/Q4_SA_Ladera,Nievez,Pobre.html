@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NCE Reviewer</title>
+	<meta name="author" content="Clive Nouvel M. Ladera, Aria Yzobelle E. Pobre, Ryhannah Gwyne B. Nievez">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image:url("sc1.png");
+	background-color: #8294C4;
+}
+header {
+	background-image:url("sc.png");
+	background-color:#ACB1D6;
+	padding: 10px;
+	position: absolute;
+	top:0;
+	width:100%;
+	position: fixed;
+}
+header h1 {
+    float: left;
+    margin-top: 10px;
+	color: #FFFBEB;
+	font-size: 50px;
+	margin-bottom: 10px;
+	font-family: "Garamond", Times, serif;
+}
+form {
+	padding: 20px;
+	font-family: "Garamond", Times, serif;
+	cursor: pointer;
+}
+#score{
+	background-color: #251749;
+	text-align: center;
+	border-radius: 30px;
+	margin: 5px 300px 5px 280px;
+	color: #FFFBEB;
+}	
+#score h2 {
+	font-size: 30px;
+}
+#score h2:hover {
+	scale:130%;
+	 transition: scale 0.5s;
+}
+#sc{
+	color: #FFFBEB;
+}
+fieldset{
+	background-color: #FFFBEB;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin: 0px 50px 0px 50px;
+}	
+fieldset:hover {
+	scale:110%;
+	 transition: scale 0.5s;
+}
+legend{
+	margin: 5px 5px 5px 5px;
+	background-color: #DBDFEA;
+	padding: 10px;
+	border-radius: 20px;
+}	
+section {
+	background-color: #DBDFEA;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 5px 250px 5px 250px;
+}
+#sec2 {
+	background-color: #DBDFEA;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 30px 250px 0px 250px;
+}
+
+input[type=button], input[type=submit]{
+  background-color: #251749;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 16px 75px;
+  text-decoration: none;
+  margin-left: 420px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+input[type=button], input[type=reset]{
+  background-color: #251749;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 16px 75px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+</style>
+</head>
+<body>
+	<header>
+        <h1>NCE REVIEWER-SCIENCE</h1>
+     </header>
+		<br id="lol"><br><br><br><br>
+		<br><fieldset id="score">
+		<h1>Score:</h1>
+      <h2 id="sc"></h2>
+	  </fieldset>
+	  <br><br>
+	<section>
+	<h1>Test I: Multiple Choice </h1>
+	<p>Instruction: Select the BEST letter for each problem below.</p>
+	</section>
+	
+	<form onsubmit="return validateForm()">
+    <br>
+    <fieldset id="1st">
+      <legend>1. What is it called when your brain responds to a stimulus without having to think about it?</legend>
+      <label><input type="radio" name="q1" value="a" required>  A. Muscle Movement</label><br>
+      <label><input type="radio" name="q1" value="b">  B. Reflex</label><br>
+      <label><input type="radio" name="q1" value="c">  C. Nerves</label><br>
+	  <label><input type="radio" name="q1" value="d">  D. Luck</label><br>
+	<p id="c1"></p>
+    </fieldset>
+	
+	<br><fieldset id="2nd">
+      <legend>2. What would cause a balloon to stick to someone's head?</legend>
+      <label><input type="radio" name="q2" value="a" required>  A. Force of Gravity</label><br>
+      <label><input type="radio" name="q2" value="b">  B. Force of Friction</label><br>
+      <label><input type="radio" name="q2" value="c">  C. Opposite electric charges</label><br>
+	  <label><input type="radio" name="q2" value="d">  D. Opposite magnetic poles</label><br>
+	<p id="c2"></p>
+    </fieldset>
+    
+    <br><fieldset id="3rd">
+      <legend>3. Magnetic poles that are alike will __ . Choose the correct answer.</legend>
+      <label><input type="radio" name="q3" value="a" required>  A. Attract</label><br>
+      <label><input type="radio" name="q3" value="b">  B. Repel</label><br>
+      <label><input type="radio" name="q3" value="c">  C. Generate electricity</label><br>
+	  <label><input type="radio" name="q3" value="d">  D. Generate energy</label><br>
+	<p id="c3"></p>
+    </fieldset>
+	
+	
+	<br><fieldset id="4th">
+      <legend>4. What is weight?</legend>
+      <label><input type="radio" name="q4" value="a" required>  A. The force of gravity on an object</label><br>
+      <label><input type="radio" name="q4" value="b">  B. The amount of matter in an object </label><br>
+      <label><input type="radio" name="q4" value="c">  C. The size of an object</label><br>
+	  <label><input type="radio" name="q4" value="d">  D. The same thing as mass </label><br>
+	<p id="c4"></p>
+    </fieldset>
+	
+	<br><fieldset id="5th">
+      <legend>5. The path an object takes as it revolves around another object in space is called?</legend>
+      <label><input type="radio" name="q5" value="a" required>  A. Twist</label><br>
+      <label><input type="radio" name="q5" value="b">  B. Revolution</label><br>
+      <label><input type="radio" name="q5" value="c">  C. Circle</label><br>
+	  <label><input type="radio" name="q5" value="d">  D. Orbit</label><br>
+	<p id="c5"></p>
+    </fieldset>
+	
+	<br><fieldset id="6th">
+      <legend>6. Why do moon phases change?</legend>
+      <label><input type="radio" name="q6" value="a" required>  A. Earth rotates around the moon </label><br>
+      <label><input type="radio" name="q6" value="b">  B. Earth rotates around the sun </label><br>
+      <label><input type="radio" name="q6" value="c">  C. The moon casts a shadow on Earth</label><br>
+	  <label><input type="radio" name="q6" value="d">  D. The moon orbits around the Earth</label><br>
+	<p id="c6"></p>
+    </fieldset>
+	
+	<br><fieldset id="7th">
+      <legend>7. When light is refracted, it __. Choose the correct answer.</legend>
+      <label><input type="radio" name="q7" value="a" required>  A. Does not allow light to pass through</label><br>
+      <label><input type="radio" name="q7" value="b">  B. Appears as if an object is “broken”, light is scattered</label><br>
+      <label><input type="radio" name="q7" value="c">  C. Absorbs one color and reflects the rest</label><br>
+	  <label><input type="radio" name="q7" value="d">  D. None of the above</label><br>
+	<p id="c7"></p>
+    </fieldset>
+	
+	<br><fieldset id="8th">
+      <legend>8. In an ecosystem, which of the following is NOT considered an abiotic factor?</legend>
+      <label><input type="radio" name="q8" value="a" required>  A. Light</label><br>
+      <label><input type="radio" name="q8" value="b">  B. Plants</label><br>
+      <label><input type="radio" name="q8" value="c">  C. Soil</label><br>
+	  <label><input type="radio" name="q8" value="d">  D. Temperature</label><br>
+	<p id="c8"></p>
+    </fieldset>
+	
+	<br><fieldset id="9th">
+      <legend>9. Which component of soil is made up of previously living materials?</legend>
+      <label><input type="radio" name="q9" value="a" required>  A. Organic Matter</label><br>
+      <label><input type="radio" name="q9" value="b">  B. Clay</label><br>
+      <label><input type="radio" name="q9" value="c">  C. Rocks & rocks particles</label><br>
+	  <label><input type="radio" name="q9" value="d">  D. Water</label><br>
+	<p id="c9"></p>
+    </fieldset>
+	
+	<br><fieldset id="10th">
+      <legend>10. In some areas, salt is obtained from seawater by letting seawater flow into wide, 
+				shallow ponds after which are then closed of from the sea. later, as each pod dries, salt is scraped up. 
+				What are the processes involved in getting solid salt from seawater?</legend>
+      <label><input type="radio" name="q10" value="a" required>  A. Decantation and Evaporation</label><br>
+      <label><input type="radio" name="q10" value="b">  B. Distillation and Crystallization</label><br>
+      <label><input type="radio" name="q10" value="c">  C. Evaporation and Crystallization</label><br>
+	  <label><input type="radio" name="q10" value="d">  D. Filtration and Distillation</label><br>
+	<p id="c10"></p>
+    </fieldset>
+	
+	<br><fieldset id="11th">
+      <legend>11. Which landform is best described as a low area of land between two large mountains or hills?</legend>
+      <label><input type="radio" name="q11" value="a" required>  A. Island</label><br>
+      <label><input type="radio" name="q11" value="b">  B. Sand dune</label><br>
+      <label><input type="radio" name="q11" value="c">  C. Valley</label><br>
+	  <label><input type="radio" name="q11" value="d">  D. Plateau</label><br>
+	<p id="c11"></p>
+    </fieldset>
+	
+	<br><fieldset id="12th">
+      <legend>12. A student fills a container with 500 ml of liquid, The student needs to heat the liquid to 35 degrees Celsius. 
+				What tool should the student use to measure the temperature of the liquid?</legend>
+      <label><input type="radio" name="q12" value="a" required>  A. Beaker</label><br>
+      <label><input type="radio" name="q12" value="b">  B. Graduated cylinder</label><br>
+      <label><input type="radio" name="q12" value="c">  C. Balance</label><br>
+	  <label><input type="radio" name="q12" value="d">  D. Thermometer</label><br>
+	<p id="c12"></p>
+    </fieldset>
+	
+	<br><fieldset id="13th">
+      <legend>13.  When pollen is carried from the stamen to the stigma of the same plant, the process is called __.</legend>
+      <label><input type="radio" name="q13" value="a" required>  A. Cross-pollination</label><br>
+      <label><input type="radio" name="q13" value="b">  B. Self-pollination</label><br>
+      <label><input type="radio" name="q13" value="c">  C. Fertilization</label><br>
+	  <label><input type="radio" name="q13" value="d">  D. Pollination</label><br>
+	<p id="c13"></p>
+    </fieldset>
+	
+	<br><fieldset id="14th">
+      <legend>14. One property of metals is their ability to be drawn into thin wires. This property is called ductility. 
+				Which of these metals is most ductile?</legend>
+      <label><input type="radio" name="q14" value="a" required>  A. Copper</label><br>
+      <label><input type="radio" name="q14" value="b">  B. Gold</label><br>
+      <label><input type="radio" name="q14" value="c">  C. Silver</label><br>
+	  <label><input type="radio" name="q14" value="d">  D. None of the above</label><br>
+	<p id="c14"></p>
+    </fieldset>
+	
+	<br><fieldset id="15th">
+      <legend>15.  Tulene is walking to school. It took her 2 minutes to walk 100 feet (ft). How fast was she walking?</legend>
+      <label><input type="radio" name="q15" value="a" required>  A. 100 ft per mile</label><br>
+      <label><input type="radio" name="q15" value="b">  B. 50 ft per minute</label><br>
+      <label><input type="radio" name="q15" value="c">  C. 50 ft per meter</label><br>
+	  <label><input type="radio" name="q15" value="d">  D. 100 miles per hour</label><br>
+	<p id="c15"></p>
+    </fieldset>
+	
+	<section id="sec2">
+	<h1> Fill in the blanks </h1>
+	<p>Instruction: Type the BEST answer for each question below. WATCH OUT for the spelling of the answer.</p>
+	</section>
+	
+	<br><fieldset id="fill">
+		<br/><span> 1. </span><label>A change in a characteristic of a living thing that allows it to survive in its environment is called</label>
+				<input type="text" id="one" name="q1" required><label>.</label></br>
+				<p id="c16"></p>
+				
+				<br/><span> 2. </span><input type="text" id="two" name="q2" required>
+				<label>is when gas matter loses thermal energy and converts to a liquid form.</label></br>
+				<p id="c17"></p>
+				
+				<br/><span> 3. </span><input type="text" id="three" name="q3" required>
+				<label>is/are the basic unit of matter.</label></br>
+				<p id="c18"></p>
+				
+				<br/><span> 4. </span><input type="text" id="four" name="q4" required>
+				<label>are the substances that cannot be reduced by chemical change.</label><br/>
+				<p id="c19"></p>
+				
+				<br/><span> 5. </span><label>All the living things surrounding an organism are called</label>
+				<input type="text" id="five" name="q5" required><label>.</label></br>
+				<p id="c20"></p>
+
+			</fieldset>
+ 
+    <br><br><input type="submit" value="Submit" onclick="location.href='#lol';">
+	<input type="reset" onclick="location.reload()"  value="Reset">  
+	
+	</form>
+  
+  <script>
+	function validateForm(){
+	var score = 0;
+		if(document.querySelector('input[name="q1"]:checked').value=="b"){
+			document.getElementById('1st').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('1st').style.border="5px solid red";
+			document.getElementById('c1').style.color="red";
+			document.getElementById('c1').innerHTML="Correct Answer: B. Reflex ";
+		}
+    if(document.querySelector('input[name="q2"]:checked').value=="c"){
+			document.getElementById('2nd').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('2nd').style.border="5px solid red";
+			document.getElementById('c2').style.color="red";
+			document.getElementById('c2').innerHTML="Correct Answer: C. Opposite electric charges";
+		}
+    if(document.querySelector('input[name="q3"]:checked').value=="b"){
+			document.getElementById('3rd').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('3rd').style.border="5px solid red";
+			document.getElementById('c3').style.color="red";
+			document.getElementById('c3').innerHTML="Correct Answer: B. Repel";
+		}
+    if(document.querySelector('input[name="q4"]:checked').value=="a"){
+			document.getElementById('4th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('4th').style.border="5px solid red";
+			document.getElementById('c4').style.color="red";
+			document.getElementById('c4').innerHTML="Correct Answer: A. The force of gravity on an object";
+		}
+    if(document.querySelector('input[name="q5"]:checked').value=="d"){
+			document.getElementById('5th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('5th').style.border="5px solid red";
+			document.getElementById('c5').style.color="red";
+			document.getElementById('c5').innerHTML="Correct Answer: D. Orbit";
+		}
+    if(document.querySelector('input[name="q6"]:checked').value=="d"){
+			document.getElementById('6th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('6th').style.border="5px solid red";
+			document.getElementById('c6').style.color="red";
+			document.getElementById('c6').innerHTML="Correct Answer: D. The moon orbits around the Earth";
+		}
+    if(document.querySelector('input[name="q7"]:checked').value=="b"){
+			document.getElementById('7th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('7th').style.border="5px solid red";
+			document.getElementById('c7').style.color="red";
+			document.getElementById('c7').innerHTML="Correct Answer: B. The moon orbits around the Earth";
+		}
+    if(document.querySelector('input[name="q8"]:checked').value=="b"){
+			document.getElementById('8th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('8th').style.border="5px solid red";
+			document.getElementById('c8').style.color="red";
+			document.getElementById('c8').innerHTML="Correct Answer: B. Plants";
+		}
+    if(document.querySelector('input[name="q9"]:checked').value=="a"){
+			document.getElementById('9th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('9th').style.border="5px solid red";
+			document.getElementById('c9').style.color="red";
+			document.getElementById('c9').innerHTML="Correct Answer: A. Organic Matter";
+		}
+    if(document.querySelector('input[name="q10"]:checked').value=="c"){
+			document.getElementById('10th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('10th').style.border="5px solid red";
+			document.getElementById('c10').style.color="red";
+			document.getElementById('c10').innerHTML="Correct Answer: C. Evaporation and Crystallization";
+		}
+    if(document.querySelector('input[name="q11"]:checked').value=="c"){
+			document.getElementById('11th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('11th').style.border="5px solid red";
+			document.getElementById('c11').style.color="red";
+			document.getElementById('c11').innerHTML="Correct Answer: C. Valley";
+		}
+    if(document.querySelector('input[name="q12"]:checked').value=="d"){
+			document.getElementById('12th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('12th').style.border="5px solid red";
+			document.getElementById('c12').style.color="red";
+			document.getElementById('c12').innerHTML="Correct Answer: D. Thermometer";
+		}
+    if(document.querySelector('input[name="q13"]:checked').value=="b"){
+			document.getElementById('13th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('13th').style.border="5px solid red";
+			document.getElementById('c13').style.color="red";
+			document.getElementById('c13').innerHTML="Correct Answer: B. Thermometer";
+		}
+    if(document.querySelector('input[name="q14"]:checked').value=="a"){
+			document.getElementById('14th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('14th').style.border="5px solid red";
+			document.getElementById('c14').style.color="red";
+			document.getElementById('c14').innerHTML="Correct Answer: A. Copper";
+		}
+    if(document.querySelector('input[name="q15"]:checked').value=="b"){
+			document.getElementById('15th').style.border="5px solid lightgreen";
+			score++;
+		}else{
+			document.getElementById('15th').style.border="5px solid red";
+			document.getElementById('c15').style.color="red";
+			document.getElementById('c15').innerHTML="Correct Answer: B. 50 ft per minute";
+		}
+    if(document.getElementById('one').value=="adaptation" || document.getElementById('one').value=="Adaptation"){
+    	document.getElementById('one').style.border="3px solid lightgreen";
+		score++;
+    }else{
+      document.getElementById('one').style.border="3px solid red";
+	  document.getElementById('c16').style.color="red";
+	document.getElementById('c16').innerHTML="Correct Answer: Adaptation/adaptation";
+    }
+    if(document.getElementById('two').value=="condensation" || document.getElementById('two').value=="Condensation"){
+    	document.getElementById('two').style.border="3px solid lightgreen";
+		score++;
+    }else{
+      document.getElementById('two').style.border="3px solid red";
+	  document.getElementById('c17').style.color="red";
+	document.getElementById('c17').innerHTML="Correct Answer: Condensation/condensation";
+    }
+    if(document.getElementById('three').value=="Atom"||document.getElementById('three').value=="Atoms" ||document.getElementById('three').value=="atom" ||document.getElementById('three').value=="atoms"){
+    	document.getElementById('three').style.border="3px solid lightgreen";
+		score++;
+    }else{
+      document.getElementById('three').style.border="3px solid red";
+	  document.getElementById('c18').style.color="red";
+	document.getElementById('c18').innerHTML="Correct Answer: Atom/Atoms";
+    }
+    if(document.getElementById('four').value=="elements" || document.getElementById('four').value=="Elements"){
+    	document.getElementById('four').style.border="3px solid lightgreen";
+		score++;
+    }else{
+      document.getElementById('four').style.border="3px solid red";
+	  document.getElementById('c19').style.color="red";
+	document.getElementById('c19').innerHTML="Correct Answer: Elements/elements";
+    }
+    if(document.getElementById('five').value=="environment" || document.getElementById('five').value=="Environment"){
+    	document.getElementById('five').style.border="3px solid lightgreen";
+		score++;
+    }else{
+      document.getElementById('five').style.border="3px solid red";
+	  document.getElementById('c20').style.color="red";
+	document.getElementById('c20').innerHTML="Correct Answer: Environment/environment";
+    }
+		document.getElementById('sc').innerHTML= score + "/20";
+		return false;
+	}
+	
+	
+  </script>
+</body>
+</html>
+  
